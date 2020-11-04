@@ -208,7 +208,7 @@ fn staging_testnet_genesis() -> GenesisConfig {
 	// subkey inspect "$SECRET"
 	let endowed_accounts = vec![
 		//sudo key 5CZjNDdNk6jSDn4FfTtdn16YNuX1EYe5Mc2Cq2PMwDMfoFLJ
-		hex!["9400300d911818337fdd63df73d9975594a9a62fbacccb3d3ff921fe1ad3bd25"].into(),
+		hex!["d2006bef81c0c9e458ff16902fd239e2054d7d09dce9bb8941e8530159927066"].into(),
 	];
 
 	// for i in 1 2 3 4; do for j in stash controller; do subkey inspect "$SECRET//$i//$j"; done; done
