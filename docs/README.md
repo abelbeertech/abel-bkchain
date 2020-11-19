@@ -6,3 +6,12 @@ The system encourages ABEL holders to participate as nominators. Nominators may 
 Validators assume the role of producing new blocks in BABE, validating parachain blocks, and guaranteeing finality. Nominators can choose to back select validators with their stake.
 
 The staking system pays out rewards equally to all validators regardless of stake. In other words, having more stake on a validator does not influence the block rewards they receive. 
+
+
+
+
+#### [How To Build Node](./HOW_BUILD_ABEL_NODE.md)
+
+#### [How To Run Validator](./HOW_TO_RUN_ABEL_VALIDATOR.md)
+
+#### [How To Nominate](./HOW_TO_NOMINATE.md)
