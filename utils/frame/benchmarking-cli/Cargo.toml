@@ -1,0 +1,34 @@
+[package]
+name = "frame-benchmarking-cli"
+version = "2.0.0"
+authors = ["Abel Technologies abelbeertech@outlook.com"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "http://www.abel.beer"
+repository = "https://github.com/abelbeertech/abel-bkchain"
+description = "CLI for benchmarking FRAME"
+readme = "README.md"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+frame-benchmarking = { version = "2.0.0", path = "../../../frame/benchmarking" }
+sp-core = { version = "2.0.0", path = "../../../primitives/core" }
+sc-service = { version = "0.8.0", default-features = false, path = "../../../client/service" }
+sc-cli = { version = "0.8.0", path = "../../../client/cli" }
+sc-client-db = { version = "0.8.0", path = "../../../client/db" }
+sc-executor = { version = "0.8.0", path = "../../../client/executor" }
+sp-externalities = { version = "0.8.0", path = "../../../primitives/externalities" }
+sp-keystore = { version = "0.8.0", path = "../../../primitives/keystore" }
+sp-runtime = { version = "2.0.0", path = "../../../primitives/runtime" }
+sp-state-machine = { version = "0.8.0", path = "../../../primitives/state-machine" }
+structopt = "0.3.8"
+codec = { version = "1.3.1", package = "parity-scale-codec" }
+chrono = "0.4"
+serde = "1.0.116"
+handlebars = "3.5.0"
+
+[features]
+default = ["db"]
+db = ["sc-client-db/with-kvdb-rocksdb", "sc-client-db/with-parity-db"]
