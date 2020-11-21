@@ -23,7 +23,7 @@ Once the prerequisites are installed, you can use Git to clone the Abel-BKChain 
 
 1.  Clone the Abel-BKChain (version testnet-v1.0.0).
     ```bash
-    git clone -b testnet-v1.0.0 --depth 1 https://github.com/abelbeertech/abel-bkchain.git
+    git clone -b v0.0.1-testnet --depth 1 https://github.com/abelbeertech/abel-bkchain.git
     ```
 2. Initialize your WebAssembly build environment
     ```bash
