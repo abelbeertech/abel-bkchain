@@ -6,7 +6,11 @@
 
 >NOTE: The recommended configuration for the server node is 1vCPU-2G and the operating system is Ubuntu 18.04 64-bit.
 
-1. Download the [Abel Testnet Node](http://download.jamtpfm.cn/download/abel)
+1. Download the [Abel Testnet Node](http://download.jamtpfm.cn/download/abel), and add execution permissions
+```bash
+    chmod 777 abel
+```
+
 2. Run node of abel. like this:
 
     other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/18.134.129.143/tcp/30333/p2p/12D3KooWChw7i3N9SVhZH1DRVdNps8rKwj6u6hGLF1uvTZnp73yC`.
