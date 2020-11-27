@@ -14,11 +14,11 @@
 
 2. Run node of abel. like this:
 
-    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/121.196.101.1/tcp/30333/p2p/12D3KooWMRLxK4FHe831w5m19zM7TufXGQz9a1iEGEdpqkhne7Js`.
+    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB`.
 
 
     ```bash
-    nohup ./abel  --base-path /home --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/121.196.101.1/tcp/30333/p2p/12D3KooWMRLxK4FHe831w5m19zM7TufXGQz9a1iEGEdpqkhne7Js --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all --execution=NativeElseWasm >> /home/bootnode.log 2>&1 &
+    nohup ./abel  --base-path /home --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all --execution=NativeElseWasm >> /home/bootnode.log 2>&1 &
     ```
 
     - The optional `--rpc-methods=Unsafe` flag has been added. As the name indicates, this flag is not safe to use in a production setting, but it allows this testnet of abel-bkchain.
@@ -43,7 +43,7 @@ Once the second node is up, you should see them authoring:
 19:38:46  〽️ Prometheus server started at 127.0.0.1:9615
 19:38:46  Listening for new connections on 0.0.0.0:9944.
 19:38:46  👶 Starting BABE Authorship worker
-19:38:50  🔍 Discovered new external address for our node: /ip4/121.196.101.1/tcp/30333/p2p/12D3KooWMRLxK4FHe831w5m19zM7TufXGQz9a1iEGEdpqkhne7Js
+19:38:50  🔍 Discovered new external address for our node: /ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB
 19:38:51  ⚙️  Syncing, target=#28989 (2 peers), best: #28787 (0x158c…3d36), finalized #28785 (0xa387…2195), ⬇ 1.9kiB/s ⬆ 2.6kiB/s
 19:38:56  ⚙️  Syncing  0.0 bps, target=#28991 (4 peers), best: #28787 (0x158c…3d36), finalized #28785 (0xa387…2195), ⬇ 11.6kiB/s ⬆ 3.7kiB/s
 19:38:59  ✨ Imported #28992 (0x6fa9…61a5)
