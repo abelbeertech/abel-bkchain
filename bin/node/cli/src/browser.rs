@@ -46,7 +46,7 @@ async fn start_inner(chain_spec: Option<String>, log_level: String) -> Result<Cl
 
 	info!("Substrate browser node");
 	info!("✌️  version {}", config.impl_version);
-	info!("❤️  by Parity Technologies, 2017-2020");
+	info!("❤️  by Abel Technologies, 2020-2021");
 	info!("📋 Chain specification: {}", config.chain_spec.name());
 	info!("🏷 Node name: {}", config.network.node_name);
 	info!("👤 Role: {:?}", config.role);
