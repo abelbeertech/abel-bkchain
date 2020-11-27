@@ -13,11 +13,11 @@
 
 2. Run node of abel. like this:
 
-    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/18.134.129.143/tcp/30333/p2p/12D3KooWChw7i3N9SVhZH1DRVdNps8rKwj6u6hGLF1uvTZnp73yC`.
+    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/121.196.101.1/tcp/30333/p2p/12D3KooWMRLxK4FHe831w5m19zM7TufXGQz9a1iEGEdpqkhne7Js`.
 
 
     ```bash
-    nohup ./abel  --base-path /home --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/18.134.129.143/tcp/30333/p2p/12D3KooWChw7i3N9SVhZH1DRVdNps8rKwj6u6hGLF1uvTZnp73yC --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all >> /home/bootnode.log 2>&1 &
+    nohup ./abel  --base-path /home --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/121.196.101.1/tcp/30333/p2p/12D3KooWMRLxK4FHe831w5m19zM7TufXGQz9a1iEGEdpqkhne7Js --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all --execution=NativeElseWasm >> /home/bootnode.log 2>&1 &
     ```
 
     - The optional `--rpc-methods=Unsafe` flag has been added. As the name indicates, this flag is not safe to use in a production setting, but it allows this testnet of abel-bkchain.
