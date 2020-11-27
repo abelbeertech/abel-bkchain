@@ -58,7 +58,7 @@ Once the second node is up, you should see them authoring:
 > NOTE: Use Firefox to do the following. 
 
 Main region: [Testnet UI](http://testnet.abel.beer). 
-Asian-Pacific region: [Testnet UI](http://121.196.109.253)
+Asian-Pacific region: [Testnet UI](http://121.196.109.253/?rpc=ws%3A%2F%2F121.196.101.1%3A9944#/explorer)
 
 First, we need set Firefox's config. Type `about:config` in the address bar, 
 search `network.websocket.allowInsecureFromHTTPS` and change it's value to `true`.
