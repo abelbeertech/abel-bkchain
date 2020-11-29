@@ -6,19 +6,21 @@
 
 >NOTE: The recommended configuration for the server node is 1vCPU-2G and the operating system is Ubuntu 18.04 64-bit.
 
-1. Download the [Abel Testnet Node](http://download.jamtpfm.cn/download/abel), and add execution permissions
+1. Download the [Abel Testnet Node](http://download.jamtpfm.cn/download/abel2), and add execution permissions
 ```bash
-    wget http://download.jamtpfm.cn/download/abel
-    chmod 777 abel
+    wget http://download.jamtpfm.cn/download/abel2
+    chmod 777 abel2
+    mkdir -p /home/abel-chain/
+    rm -rf /home/abel-chain/
 ```
 
 2. Run node of abel. like this:
 
-    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB`.
+    other validators can join Abel-Testnet network, just done by specifying the `--bootnodes` parameter as `/ip4/121.196.101.1/tcp/31333/p2p/12D3KooWQ8pWnT5nLf4GPwkJH4kV246f9Q2F8syLqRugQZhXpkN6`.
 
 
     ```bash
-    nohup ./abel  --base-path /home --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all --execution=NativeElseWasm >> /home/bootnode.log 2>&1 &
+    nohup ./abel2  --base-path /home/abel-chain --chain staging   --port 30333   --ws-port 9944  --rpc-port 9933  --validator --name myvalidator  --bootnodes /ip4/121.196.101.1/tcp/31333/p2p/12D3KooWQ8pWnT5nLf4GPwkJH4kV246f9Q2F8syLqRugQZhXpkN6 --rpc-methods=Unsafe --ws-external   --rpc-external  --rpc-cors all --execution=NativeElseWasm >> /home/abel-chain/bootnode.log 2>&1 &
     ```
 
     - The optional `--rpc-methods=Unsafe` flag has been added. As the name indicates, this flag is not safe to use in a production setting, but it allows this testnet of abel-bkchain.
@@ -31,7 +33,7 @@
 Once the second node is up, you should see them authoring:
 ```bash
 19:38:45  ✌️  version 2.0.0-65f39f4-x86_64-linux-gnu
-19:38:45  ❤️  by Abel Technologies abelbeertech@outlook.com, 2017-2020
+19:38:45  ❤️  by Abel Technologies abelbeertech@outlook.com, 2020-2020
 19:38:45  📋 Chain specification: Staging Testnet
 19:38:45  🏷 Node name: myvalidator
 19:38:45  👤 Role: AUTHORITY
@@ -43,7 +45,7 @@ Once the second node is up, you should see them authoring:
 19:38:46  〽️ Prometheus server started at 127.0.0.1:9615
 19:38:46  Listening for new connections on 0.0.0.0:9944.
 19:38:46  👶 Starting BABE Authorship worker
-19:38:50  🔍 Discovered new external address for our node: /ip4/121.196.101.1/tcp/30337/p2p/12D3KooWRNyzvEzdAxPseeKhR6hrqqECDfpzi4QzxgYNZoAtscKB
+19:38:50  🔍 Discovered new external address for our node: /ip4/121.196.101.1/tcp/31333/p2p/12D3KooWQ8pWnT5nLf4GPwkJH4kV246f9Q2F8syLqRugQZhXpkN6
 19:38:51  ⚙️  Syncing, target=#28989 (2 peers), best: #28787 (0x158c…3d36), finalized #28785 (0xa387…2195), ⬇ 1.9kiB/s ⬆ 2.6kiB/s
 19:38:56  ⚙️  Syncing  0.0 bps, target=#28991 (4 peers), best: #28787 (0x158c…3d36), finalized #28785 (0xa387…2195), ⬇ 11.6kiB/s ⬆ 3.7kiB/s
 19:38:59  ✨ Imported #28992 (0x6fa9…61a5)
@@ -58,7 +60,7 @@ Once the second node is up, you should see them authoring:
 > NOTE: Use Firefox to do the following. 
 
 Main region: [Testnet UI](http://testnet.abel.beer). 
-Asian-Pacific region: [Testnet UI](http://121.196.109.253/?rpc=ws%3A%2F%2F121.196.101.1%3A9955#/explorer)
+Asian-Pacific region: [Testnet UI](http://121.196.109.253/?rpc=ws%3A%2F%2F121.196.101.1%3A9844#/explorer)
 
 First, we need set Firefox's config. Type `about:config` in the address bar, 
 search `network.websocket.allowInsecureFromHTTPS` and change it's value to `true`.
