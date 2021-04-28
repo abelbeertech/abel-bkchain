@@ -8,7 +8,7 @@
 
 1. Download the [Abel Testnet Node](http://download.jamtpfm.cn/download/abel2), and add execution permissions
 ```bash
-    wget http://download.jamtpfm.cn/download/abel2
+    wget http://download.wojialvshi.cn/download/abel2
     chmod 777 abel2
     mkdir -p /home/abel-chain/
     rm -rf /home/abel-chain/
